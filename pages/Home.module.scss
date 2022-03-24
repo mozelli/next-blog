@@ -1,3 +1,31 @@
-.container {
-  font-size: 5rem;
+.homeLayout {
+  
+  .header {
+    width: 100%;
+  }
+
+  .feed {
+    width: 100%;
+
+    .post {
+      width: 100%;
+      max-width: 392px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .footerColum {
+      width: 100%;
+      max-width: 392px;
+    }
+
+    .footerCredits {
+      width: 100%;
+    }
+  }
+
 }
