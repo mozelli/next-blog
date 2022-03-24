@@ -1,31 +1,30 @@
 .homeLayout {
-  
-  .header {
-    width: 100%;
-  }
+  display: flex;
+  flex-wrap: wrap;
 
   .feed {
     width: 100%;
+    height: 150px;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
 
     .post {
       width: 100%;
-      max-width: 392px;
+      display: block;
+      flex: 1 1 200px;
+      margin: 20px;
     }
   }
 
-  .footer {
+  .sideBar {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
-    .footerColum {
-      width: 100%;
-      max-width: 392px;
-    }
-
-    .footerCredits {
-      width: 100%;
-    }
+    height: 150px;
+    background-color: brown;
+    max-width: 310px;
+    margin: 0 auto;
   }
 
 }
