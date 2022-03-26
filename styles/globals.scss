@@ -60,6 +60,10 @@ button {
     font: inherit;
 }
 
+button {
+    border: 0;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -84,7 +88,7 @@ button:hover {
 }
 
 .container {
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     margin-inline: auto;
     max-width: 120rem;
 }
