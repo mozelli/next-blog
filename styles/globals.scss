@@ -20,7 +20,7 @@
     --clr-gray-300:      #A6A6A6;
     --clr-gray-600:      #737373;
     --clr-gray-900:      #404040;
-    --clr-dark:          #0D0D0D;
+    --clr-dark:          #424242;
     --clr-blue-500:      #22A2F2;
     --clr-blue-300:      #29B9F2;
     --clr-yellow:        #F2CB05;
@@ -58,6 +58,10 @@ select,
 textarea,
 button {
     font: inherit;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {

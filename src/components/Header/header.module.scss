@@ -1,0 +1,26 @@
+.headerComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 50px;
+    background-color: var(--clr-dark);
+}
+
+.headerComponent h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-white);
+}
+
+.headerComponent button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-dark);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: var(--clr-white);
+}
