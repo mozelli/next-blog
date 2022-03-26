@@ -2,7 +2,7 @@ module.exports = {
     testPathIgnorePatterns: [
         "/node_modules/", "/.next/"
     ],
-    setupFilesAfterEnd: [
+    setupFilesAfterEnv: [
         "<rootDir>/src/tests/setupTests.js"
     ],
     testEnvironment: "jsdom",
