@@ -4,10 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className={styles.homeLayout}>
-        <main className={ styles.feed }>
-          {/* <div className={ styles.post }>
-            <h1>Post</h1>
-          </div>
+        {/* <main className={ styles.feed }>
           <div className={ styles.post }>
             <h1>Post</h1>
           </div>
@@ -16,11 +13,14 @@ export default function Home() {
           </div>
           <div className={ styles.post }>
             <h1>Post</h1>
-          </div> */}
+          </div>
+          <div className={ styles.post }>
+            <h1>Post</h1>
+          </div>
         </main>
         <aside className={ styles.sideBar }>
 
-        </aside>
+        </aside> */}
       </div>
     </div>
   )
