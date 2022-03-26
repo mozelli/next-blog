@@ -1,30 +1,9 @@
 .homeLayout {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--clr-light);
 
-  .feed {
+  main {
     width: 100%;
-    height: 150px;
-    max-width: 850px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aqua;
-
-    .post {
-      width: 100%;
-      display: block;
-      flex: 1 1 200px;
-      margin: 20px;
-    }
   }
-
-  .sideBar {
-    width: 100%;
-    height: 150px;
-    background-color: brown;
-    max-width: 310px;
-    margin: 0 auto;
-  }
-
 }

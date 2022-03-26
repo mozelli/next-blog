@@ -1,27 +1,15 @@
+import Feed from '../src/components/Feed'
 import styles from './Home.module.scss'
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className={styles.homeLayout}>
-        {/* <main className={ styles.feed }>
-          <div className={ styles.post }>
-            <h1>Post</h1>
-          </div>
-          <div className={ styles.post }>
-            <h1>Post</h1>
-          </div>
-          <div className={ styles.post }>
-            <h1>Post</h1>
-          </div>
-          <div className={ styles.post }>
-            <h1>Post</h1>
-          </div>
-        </main>
-        <aside className={ styles.sideBar }>
+    <div className={styles.homeLayout}>
+      <main className={ styles.feed }>
+        <Feed />
+      </main>
+      <aside className={ styles.sideBar }>
 
-        </aside> */}
-      </div>
+      </aside>
     </div>
   )
 }
