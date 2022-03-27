@@ -1,9 +1,31 @@
 .homeLayout {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin: 20px auto;
   background-color: var(--clr-light);
 
-  main {
+  main.feed {
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  aside.sideBar {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeLayout {
+    grid-template-columns: 2fr 1fr;
+
+    aside.sideBar {
+      visibility: visible;
+      width: 100%;
+      max-width: 400px;
+      height: 100vh;
+    }
   }
 }

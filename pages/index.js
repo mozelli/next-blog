@@ -6,10 +6,12 @@ export default function Home() {
     <div className={styles.homeLayout}>
       <main className={ styles.feed }>
         <Feed />
+        
       </main>
       <aside className={ styles.sideBar }>
-
+        
       </aside>
+      
     </div>
   )
 }
