@@ -2,9 +2,9 @@
     padding: 0 2rem;
     background-color: var(--clr-dark);
 
-        .containerFluid {
+    .containerFluid {
             
-            .navBar {
+        .navBar {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -15,12 +15,6 @@
                 font-size: 2rem;
             }
 
-            .mobileButtonMenuIcon {
-                color: var(--clr-white);
-                padding: 7px 3px;
-                cursor: pointer;
-            }
-
             .mobileButtonMenu {
                 display: none;
             }
@@ -28,6 +22,9 @@
             .mobileButtonMenuIcon {
                 display: flex;
                 align-items: center;
+                color: var(--clr-white);
+                padding: 7px 3px;
+                cursor: pointer;
             }
         }
 
@@ -73,6 +70,20 @@
             height: 211px;
             opacity: 1;
         }
+    }
+}
 
+@media (min-width: 700px) {
+    .headerComponent {
+
+        .containerFluid {
+
+            .navBar {
+                
+                .mobileButtonMenuIcon {
+                    display: none;
+                }
+            }
+        }
     }
 }
