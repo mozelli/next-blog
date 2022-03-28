@@ -1,95 +1,56 @@
 .headerComponent {
-    width: 100%;
+    padding: 2rem;
     background-color: var(--clr-dark);
 
-    .content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        width: 100%;
+    .containerFluid {
         
-
-        h1 {
-            padding: 1rem 0;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--clr-white);
-        }
-
-        button.menuButton {
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            background-color: var(--clr-dark);
-            border: 0;
-            width: 30px;
-            height: 30px;
-            padding: 0;
-            color: var(--clr-white);
-            display: none;
+        .navBar {
+            display: flex;
             align-items: center;
+            justify-content: space-between;
+
+            .mobileButtonMenu {
+                display: none;
+            }
+
+            .mobileButtonMenuIcon {
+                display: flex;
+                align-items: center;
+            }
         }
 
-        nav.navBar {
+        .navBarCollapse {
+
+            height: 0;
+            opacity: 0;
+            transition: height 300ms, opacity 400ms;
             
+
             ul {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                list-style: none;
                 padding: 0;
                 margin: 0;
+                list-style: none;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
 
                 li {
-                    color: var(--clr-light);
-                    font-size: 1.5rem;
-                    padding: 10px;
-                    margin: 0 2px;
-                    cursor: pointer;
-                    transition: all 200ms;
-                    
-                    &:hover, &.active {
-                        background-color: var(--clr-gray-600);
-                        color: var(--clr-white);
-                    }
-                } 
-            }
-        }
-        
-    }
-}
-
-@media (max-width: 700px) {
-    .headerComponent {
-        
-        .content {
-            flex-direction: column;
-            align-items: unset;
-
-            button.menuButton {
-                display: flex;
-            }
-            
-            nav.navBar {
-
-                ul {
-                    flex-direction: column;
-                    align-items: unset;
-
-                    li {
-                        text-align: center;
-
-                        &.active {
-                            background-color: var(--clr-dark);
-                        }
-                    }
+                    width: 100%;
+                    text-align: center;
+                    color: var(--clr-white);
+                    padding: 20px;
+                    margin: 2px 0;
                     
                 }
             }
-
-            
         }
+
+        .show {
+            height: 200px;
+            opacity: 1;
+        }
+
     }
 }
