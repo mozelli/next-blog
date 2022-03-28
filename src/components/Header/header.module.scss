@@ -1,13 +1,25 @@
 .headerComponent {
-    padding: 2rem;
+    padding: 0 2rem;
     background-color: var(--clr-dark);
 
-    .containerFluid {
-        
-        .navBar {
+        .containerFluid {
+            
+            .navBar {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding-top: 10px;
+
+            h1 {
+                color: var(--clr-white);
+                font-size: 2rem;
+            }
+
+            .mobileButtonMenuIcon {
+                color: var(--clr-white);
+                padding: 7px 3px;
+                cursor: pointer;
+            }
 
             .mobileButtonMenu {
                 display: none;
@@ -23,12 +35,12 @@
 
             height: 0;
             opacity: 0;
-            transition: height 300ms, opacity 400ms;
-            
+            transition: height 350ms, opacity 400ms;
 
             ul {
                 padding: 0;
-                margin: 0;
+                margin: 1rem 0 0 0;
+                border-top: 1px solid var(--clr-gray-300);
                 list-style: none;
 
                 display: flex;
@@ -36,19 +48,29 @@
                 align-items: center;
                 width: 100%;
 
-                li {
+                a {
                     width: 100%;
-                    text-align: center;
-                    color: var(--clr-white);
-                    padding: 20px;
-                    margin: 2px 0;
-                    
+                    margin: 0.5rem 0;
+                    text-decoration: none;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 1.8rem 1rem;
+                        font-weight: 700;
+                        color: var(--clr-white);
+                    }
+
+                    &:hover {
+                        background-color: var(--clr-gray-600);
+                    }
                 }
             }
         }
 
         .show {
-            height: 200px;
+            height: 211px;
             opacity: 1;
         }
 
